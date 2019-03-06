@@ -1,0 +1,52 @@
+.landingPage{
+margin:10rem auto;
+display: flex;
+justify-content: space;
+&__leftSide{
+flex:1;
+margin-right:8rem;
+}
+&__title{
+  font-size:3rem;
+  font-weight:100;
+}
+&__subTitle{
+  font-size: 3.5rem;
+  font-weight:300;
+  text-transform: uppercase;
+}
+&__paragraph{
+  font-size: .9rem;
+  font-weight: 300;
+  margin-top:2rem;
+  line-height: 1.4;
+  color:$paragraphColor;
+}
+
+&__button{
+  border-radius: 100px;
+      color: white;
+      padding: 15px 20px;
+      width: 200px;
+    margin-top:2rem;
+      text-align: center;
+      cursor:pointer;
+      &:hover{
+        background:$buttonHoverColorLightPurple;
+      }
+}
+&__rightSide{
+  flex:1;
+}
+&__imgContainer{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden
+}
+&__img{
+min-width:100%;
+min-height:100%;
+}
+
+}
