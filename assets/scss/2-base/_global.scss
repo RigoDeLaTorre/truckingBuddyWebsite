@@ -12,6 +12,12 @@ body {
 }
 
 .truckingBuddy__button{
-background:$button;
+@include button;
 
+}
+.truckingBuddy__paragraph{
+	font-size: .9rem;
+	font-weight: 300;
+	line-height: 1.4;
+	color:$paragraphColor;
 }
