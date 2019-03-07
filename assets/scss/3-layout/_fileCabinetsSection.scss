@@ -1,3 +1,6 @@
+#fileCabinets-section{
+  padding-bottom:10rem;
+}
 .fileCabinets-section__title{
   font-size: 2rem;
   font-weight:300;
@@ -16,10 +19,13 @@
      justify-content: center;
      align-items: center;
      overflow: hidden;
+       box-shadow:$boxshadow;
+       border-radius: 5px;
   }
   &__img{
-    min-width:100%;
-    min-height:100%;
+    max-width:100%;
+
+
   }
 }
 &__rightSide{
@@ -31,6 +37,7 @@ justify-content: space-between;
     box-shadow:$boxshadow;
     margin-left:5rem;
     flex:1;
+
     &--topGroup{
       margin-bottom:2rem;
     }
@@ -55,7 +62,9 @@ justify-content: space-between;
   }
 }
 &__buttonContainer{
+  margin-top:3rem;
   display:flex;
   justify-content: flex-end;
+
 }
 }

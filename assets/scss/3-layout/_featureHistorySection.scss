@@ -1,0 +1,36 @@
+
+.features{
+
+  &__container{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    padding:10rem 0;
+
+  }
+  &__group{
+    flex:1;
+    max-width:30%;
+
+  }
+  &__imgContainer{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+
+  }
+  &__img{
+    max-width:100%;
+    box-shadow:$boxshadow;
+    border-radius: 5px;
+  }
+  &__title{
+    font-size: 1.3rem;
+    margin:2rem 0;
+
+  }
+  &__paragraph{
+    line-height: 1.5;
+  }
+}

@@ -33,7 +33,9 @@ margin-right:8rem;
   display: flex;
    justify-content: center;
    align-items: center;
-   overflow: hidden
+   overflow: hidden;
+   box-shadow:$boxshadow;
+   border-radius: 5px;
 }
 &__img{
 min-width:100%;
