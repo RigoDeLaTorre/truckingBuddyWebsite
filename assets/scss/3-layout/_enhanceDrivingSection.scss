@@ -1,3 +1,39 @@
+
+#enhance-driving{
+  background: url(/img/truckingBackground.jpg) no-repeat center bottom fixed;
+    background-size: cover;
+
+}
 .enhance{
-  
+
+  &__title{
+    color:#ffffff;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom:2rem;
+      letter-spacing: .5px;
+  }
+  &__subTitle{
+    color:#ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom:2rem;
+      letter-spacing: .5px;
+
+  }
+  &__button{
+    background:#ffffff;
+    color:$button;
+    font-weight:500;
+    &:hover{
+      color:#ffffff;
+      background:$button;
+    }
+  }
+&__textContainer{
+  padding:50px 0;
+  max-width:300px;
+
+
+}
 }
