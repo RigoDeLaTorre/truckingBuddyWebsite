@@ -9,6 +9,12 @@ body {
 .container {
 	max-width: 1400px;
 	margin: 0 auto;
+	@media(max-width:$breakpoint-desktop){
+	padding:0 2rem;;
+	}
+	@media(max-width:$breakpoint-tablet){
+
+	}
 }
 
 .truckingBuddy__button{

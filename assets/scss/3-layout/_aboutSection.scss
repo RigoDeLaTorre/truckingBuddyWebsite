@@ -1,8 +1,14 @@
 .about{
   padding:5rem 0;
   display:flex;
-  flex-flow:row wrap;
+  flex-direction: row;
   justify-content: space-between;
+  @media(max-width:$breakpoint-desktop){
+  padding:5rem 2rem;
+  }
+  @media(max-width:$breakpoint-tablet){
+  flex-direction: column;
+  }
   &__title{
     font-size: 2rem;
     margin-bottom:2rem;
@@ -11,6 +17,10 @@
   &__leftSide{
     flex:1;
     margin-right:15rem;
+    @media(max-width:$breakpoint-tablet){
+  margin-right:0;
+  margin-bottom:3rem;
+    }
   }
   &__paragraph{
     line-height: 2;
@@ -22,15 +32,35 @@
 
   }
   &__imgContainer{
-      width:200px;
-      height:200px;
-      margin:.5rem;
-      overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+    background-image: linear-gradient(45deg, #a697e385 0%, #3c289291 100%),url(/img/loadboard.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100%;
+    width:100%;
+
+    min-height:300px;
+    min-width:300px;
   }
   &__img{
     width:100%;
     height:100%;
 
 
+  }
+  &__button{
+    position: absolute;
+    background:white;
+    color:$button;
+    box-shadow:$boxshadow;
+    &:hover{
+      background:orange;
+      color:#fff;
+    }
   }
 }

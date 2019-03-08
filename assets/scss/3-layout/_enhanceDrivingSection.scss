@@ -2,7 +2,9 @@
 #enhance-driving{
   background: url(/img/truckingBackground.jpg) no-repeat center bottom fixed;
     background-size: cover;
-
+    @media(max-width:$breakpoint-tablet){
+    background-attachment:inherit;
+    }
 }
 .enhance{
 
@@ -12,6 +14,9 @@
     font-weight: 600;
     margin-bottom:2rem;
       letter-spacing: .5px;
+      @media(max-width:$breakpoint-mobile){
+    text-shadow: 2px 2px #506083;
+      }
   }
   &__subTitle{
     color:#ffffff;

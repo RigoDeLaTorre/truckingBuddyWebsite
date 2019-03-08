@@ -1,6 +1,6 @@
 .pricing-section{
   background:$pricingBackground;
-  height:100vh;
+
 }
 .pricing{
   &__container{
@@ -8,7 +8,8 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    // height:100%;
+      padding:5rem;
+
   }
   &__titleCContainer{
 
@@ -17,15 +18,25 @@
     color:#ffffff;
     font-size: 3rem;
     font-weight:600;
-    margin:4rem 0;
+    margin-bottom:2rem;
     letter-spacing: 1px;
+    @media(max-width:$breakpoint-tablet){
+    font-size: 2rem;
+    }
   }
+
   &__table{
     background:#ffffff;
     padding:200px;
     padding:75px 150px;
     box-shadow:$boxshadow;
     border-radius: 2px;
+    @media(max-width:$breakpoint-tablet){
+    padding:40px 80px;
+    }
+    @media(max-width:$breakpoint-mobile){
+      padding:20px 40px;
+    }
     &__onePrice{
       font-size:1.4rem;
       color:#000000;
@@ -33,6 +44,13 @@
       text-align: center;
       letter-spacing: 5px;
       text-transform: uppercase;
+      @media(max-width:$breakpoint-tablet){
+      font-size: 1rem;
+      }
+      @media(max-width:$breakpoint-mobile){
+      font-size: .8rem;
+      }
+
       &::after{
         content:".";
         display:block;
@@ -42,6 +60,11 @@
         position: relative;
         left:120px;
         margin-top:.5rem;
+        @media(max-width:$breakpoint-tablet){
+        left:64px;
+        width:63px;
+        height:2px;
+        }
       }
 
   }
@@ -51,6 +74,10 @@
     font-weight:700;
     margin-bottom:3rem;
   text-align: center;
+  @media(max-width:$breakpoint-tablet){
+  font-size: 1.7rem;
+  }
+
   }
   &__listItems{
     position: relative;
@@ -60,6 +87,12 @@
     font-weight:300;
     line-height: 1.5;
     letter-spacing: 2px;
+    @media(max-width:$breakpoint-tablet){
+    font-size: 1rem;
+    }
+    @media(max-width:$breakpoint-mobile){
+    font-size: .8rem;
+    }
 
   }
   &__buttonContainer{

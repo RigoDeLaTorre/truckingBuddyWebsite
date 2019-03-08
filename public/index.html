@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Trucking Buddy</title>
+  <title>Simple Trucker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/styles.css">
 
@@ -11,9 +11,25 @@
 
 <body>
   <section id="home">
+    <nav class="nav-sectionMobile">
+      <h1 class="nav-sectionMobile__companyName">Simple Trucker</h1>
+
+      <div class="nav-sectionMobile__navGroup">
+        <div class="nav-sectionMobile__navIcon__container">
+            <img class="nav-sectionMobile__navIcon" src="./img/menu.svg" alt="" onclick="navMenu()">
+        </div>
+
+            <ul id="mobile" class="nav-sectionMobile__navList">
+              <li class="nav-sectionMobile__links">Home</li>
+              <li class="nav-sectionMobile__links">Pricing</li>
+              <li class="nav-sectionMobile__links">About</li>
+              <li class="nav-sectionMobile__links">Contact</li>
+            </ul>
+      </div>
+    </nav>
     <div class="container">
     <nav class="nav-section">
-      <h1 class="nav-section__companyName">Trucking Buddy</h1>
+      <h1 class="nav-section__companyName">Simple Trucker</h1>
       <ul class="nav-section__navList">
         <li class="nav-section__navList__links">Home</li>
         <li class="nav-section__navList__links">Pricing</li>
@@ -21,6 +37,11 @@
         <li class="nav-section__navList__links">Contact</li>
       </ul>
     </nav>
+
+
+
+
+
     <div class="landingPage">
       <div class="landingPage__leftSide">
         <h2 class="landingPage__title">Load tracking for truckers</h2>
@@ -30,7 +51,7 @@
       </div>
       <div class="landingPage__rightSide">
         <div class="landingPage__imgContainer">
-          <img class="landingPage__img" src="./img/mainPic.png" alt="">
+          <img class="landingPage__img" src="./img/mainPic.jpg" alt="">
         </div>
       </div>
     </div>
@@ -41,13 +62,13 @@
 
     <h1 class="automaticAlerts__title">Automatic Alerts</h1>
     <div class="automaticAlerts__container">
-      <div class="automaticAlerts__group">
+      <div class="automaticAlerts__group automaticAlerts__group--margin">
         <div class="automaticAlerts__imgContainer">
           <img class="automaticAlerts__img" src="./img/driverLicense.svg" alt="">
         </div>
         <h4 class="automaticAlerts__groupTitle">Drivers License Expiration</h4>
       </div>
-      <div class="automaticAlerts__group">
+      <div class="automaticAlerts__group automaticAlerts__group--margin">
         <div class="automaticAlerts__imgContainer">
           <img class="automaticAlerts__img" src="./img/deliveryTruck.svg" alt="">
         </div>
@@ -65,11 +86,13 @@
 
   <section id="fileCabinets-section">
     <div class="container">
-    <h1 class="fileCabinets-section__title">No more file cabinets...</h1>
+    <h1 class="fileCabinets-section__title">No more files & folders</h1>
     <div class="fileCabinets__container">
       <div class="fileCabinets__leftSide">
         <div class="fileCabinets__leftSide__imgContainer">
-            <img class="fileCabinets__leftSide__img" src="./img/passFile.jpg" alt="">
+            <!-- <img class="fileCabinets__leftSide__img" src="./img/passFile.jpg" alt=""> -->
+            <img class="fileCabinets__leftSide__img" src="./img/fileCabinetsOfficeSpace.png" alt="">
+
         </div>
 
       </div>
@@ -131,7 +154,7 @@
 <div class="features__container">
   <div class="features__group">
     <div class="features__imgContainer">
-      <img class="features__img" src="./img/passFile.jpg" alt="">
+      <img class="features__img" src="./img/customerHistory.png" alt="">
     </div>
     <h1 class="features__title">Customer History</h1>
     <p class="truckingBuddy__paragraph features__paragraph">
@@ -141,7 +164,7 @@
   </div>
   <div class="features__group">
     <div class="features__imgContainer">
-      <img class="features__img" src="./img/passFile.jpg" alt="">
+      <img class="features__img" src="./img/driverHistory.png" alt="">
     </div>
     <h1 class="features__title">Driver Pay History</h1>
     <p class="truckingBuddy__paragraph features__paragraph">
@@ -180,17 +203,10 @@
     </div>
     <div class="about__rightSide">
       <div class="about__imgContainer">
-        <img class="about__img" src="./img/aboutAgent.png"alt="">
+        <!-- <img class="about__img" src="./img/loadboard.png"alt=""> -->
+          <div class="truckingBuddy__button about__button">Learn More</div>
       </div>
-      <div class="about__imgContainer">
-        <img class="about__img" src="./img/aboutDriver.png" alt="">
-      </div>
-      <div class="about__imgContainer">
-        <img class="about__img" src="./img/aboutAccounting.png" alt="">
-      </div>
-      <div class="about__imgContainer">
-        <img class="about__img" src="./img/aboutPayroll.png" alt="">
-      </div>
+
     </div>
   </div>
   </section>
@@ -198,9 +214,9 @@
 <footer id ="footer">
   <div class="container">
   <div class="footer">
-    <h4 class="footer__companyName">Trucking Buddy</h4>
-    <h3 class="footer__email">support@truckingbuddy.com</h3>
-    <h6 class="footer__copyright">@2019 TruckingBuddy.com</h6>
+    <h4 class="footer__companyName">Simple Trucker</h4>
+    <h3 class="footer__email">support@simpletrucker.com</h3>
+    <h6 class="footer__copyright">@2019 SimpleTrucker.com</h6>
   </div>
 
 </div>
@@ -209,8 +225,18 @@
 
 
 
+<script type="text/javascript">
+function navMenu() {
+  console.log("clicked");
+  let element = document.getElementById("mobile");
 
-
+  if (element.classList.contains("nav-sectionMobile__navList--active")) {
+    element.classList.remove("nav-sectionMobile__navList--active");
+  } else {
+    element.classList.add("nav-sectionMobile__navList--active");
+  }
+}
+</script>
 
 
   <!-- <div id="app"></div>
