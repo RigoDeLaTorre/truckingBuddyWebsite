@@ -10,13 +10,22 @@
       font-weight:500;
       margin:1rem 0;
     }
+    &__details{
+      position: relative;
+      left:33px;
+      line-height: 1.7;
+    }
     &__column{
       display:flex;
       flex-direction: column;
-      flex-basis:35%;
+      flex-basis:40%;
     }
     &__group{
       margin:1rem 0;
+      .material-icons{
+        font-size:1rem;
+        margin-right:1rem;
+      }
     }
   }
 }
