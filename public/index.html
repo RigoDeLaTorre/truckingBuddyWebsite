@@ -32,10 +32,10 @@
     <nav class="nav-section">
       <h1 class="nav-section__companyName">Simple Trucker</h1>
       <ul class="nav-section__navList">
-        <li class="nav-section__navList__links">Home</li>
-        <li class="nav-section__navList__links">Pricing</li>
-        <li class="nav-section__navList__links">Features</li>
-        <li class="nav-section__navList__links">About</li>
+        <li class="nav-section__navList__links"><a href="/index.html">Home</a></li>
+        <li class="nav-section__navList__links"><a href="#pricing">Pricing</a></li>
+        <li class="nav-section__navList__links"><a href="/features.html">Features</a></li>
+        <li class="nav-section__navList__links"><a href="#about">About</a></li>
         <li class="nav-section__navList__links">Contact</li>
       </ul>
     </nav>
@@ -229,14 +229,14 @@
 
 <script type="text/javascript">
 function navMenu() {
-  console.log("clicked");
-  let element = document.getElementById("mobile");
+	console.log('clicked');
+	let element = document.getElementById('mobile');
 
-  if (element.classList.contains("nav-sectionMobile__navList--active")) {
-    element.classList.remove("nav-sectionMobile__navList--active");
-  } else {
-    element.classList.add("nav-sectionMobile__navList--active");
-  }
+	if (element.classList.contains('nav-sectionMobile__navList--active')) {
+		element.classList.remove('nav-sectionMobile__navList--active');
+	} else {
+		element.classList.add('nav-sectionMobile__navList--active');
+	}
 }
 </script>
 
