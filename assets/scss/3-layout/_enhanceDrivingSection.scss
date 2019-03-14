@@ -1,6 +1,7 @@
 
 #enhance-driving{
   background: url(/img/truckingBackground.jpg) no-repeat center bottom fixed;
+    // background: url(/simpletrucker/img/truckingBackground.jpg) no-repeat center bottom fixed;
     background-size: cover;
     @media(max-width:$breakpoint-tablet){
     background-attachment:inherit;

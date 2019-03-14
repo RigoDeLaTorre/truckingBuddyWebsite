@@ -1,12 +1,19 @@
 .featuresPage{
+margin:10rem 0;
 &__sectionTitle{
   font-size: 2rem;
   font-weight:600;
+    margin-bottom:5rem;
 }
   &__list{
     display:flex;
     justify-content: space-between;
+        margin-top:5rem;
+    @media only screen and (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    }
     &__title{
+
       font-weight:500;
       margin:1rem 0;
     }

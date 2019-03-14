@@ -1,6 +1,9 @@
 .pricing-section{
   background:$pricingBackground;
-
+  padding:10rem 0;
+  @media(max-width:$breakpoint-tablet){
+  padding:5rem 0;
+  }
 }
 .pricing{
   &__container{
@@ -11,14 +14,14 @@
       padding:5rem;
 
   }
-  &__titleCContainer{
+  &__titleContainer{
 
   }
   &__title{
     color:#ffffff;
     font-size: 3rem;
     font-weight:600;
-    margin-bottom:2rem;
+    margin-bottom:5rem;
     letter-spacing: 1px;
     @media(max-width:$breakpoint-tablet){
     font-size: 2rem;
